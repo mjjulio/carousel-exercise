@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="question">
+    What are you
+    <strong>here to do?</strong>
+  </div>
+  <owl-carousel-o #owlCarousel
+    [options]="customOptions"
+    (translated)="getPassedData($event)"
+    (initialized)="getPassedData($event)"
+    (changed)="setControls()"
+    (dragging)="setControls()">
+    <ng-template carouselSlide *ngFor="let item of carouselData">
+      <div class="carousel-item">
+        <div class="image"></div>
+        <div class="label">{{ item.label }}</div>
+        <div class="start-here">START HERE&nbsp;&nbsp;<span class="material-icons">chevron_right</span></div>
+      </div>
+    </ng-template>  
+  </owl-carousel-o>
+  <div class="carousel-controls-container">
+    <div #btnPrevious class="carousel-control prev" (click)="owlCarousel.prev()">
+      <span class="material-icons">chevron_left</span>
+    </div>
+    <div #btnNext class="carousel-control next" (click)="owlCarousel.next()">
+      <span class="material-icons">chevron_right</span>
+    </div>
+  </div>
+</div>

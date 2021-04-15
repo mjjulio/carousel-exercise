@@ -1,7 +1,7 @@
 .container {
   height: 1000px;
   width: 1416px;
-  background: rgba(35, 245, 255, 0.8);
+  
   margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
   --column-width2: 96px 120px;
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(90deg, rgba(245, 245, 245, 0.48) var(--column-width1), rgba(5, 50, 65, 0.32) var(--column-width2));
+  background: repeating-linear-gradient(90deg, #f0feff var(--column-width1),#dff3f5 var(--column-width2));
 }
 @media screen and (max-width: 1919px) {
   .container {
@@ -26,8 +26,8 @@
     width: 752px;
   }
   .content {
-    --column-width1: 0 88px;
-    --column-width2: 88px 112px;
+    --column-width1: 0 80px;
+    --column-width2: 80px 96px;
   }
 }
 

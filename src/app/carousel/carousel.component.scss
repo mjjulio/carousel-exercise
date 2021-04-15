@@ -81,7 +81,7 @@
 
 .glide__slide--active {
   margin-top:0;
-  width: 456px !important;
+  // width: 456px !important;
   height: 556px;
   box-shadow: inset 0 -8px #FFC000,0 4px 8px rgba(0,0,0,0.12);
   .image {
@@ -104,13 +104,13 @@
   // .glide__slide {
   //   width: 200px !important;
   // }
-  .glide__slide--active {
-    width: 424px !important;
-  }
+  // .glide__slide--active {
+  //   width: 424px !important;
+  // }
 }
 
 @media screen and (max-width: 1365px) {
-  .glide__slide--active {
-    width: 368px !important;
-  }
+  // .glide__slide--active {
+  //   width: 368px !important;
+  // }
 }

@@ -9,7 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 
 import { NgxGlideModule } from 'ngx-glide';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselTinySliderComponent } from './carousel-tiny-slider/carousel-tiny-slider.component';
+
+import { CarouselOwlComponent } from './carousel-owl/carousel-owl.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +20,15 @@ import { CarouselTinySliderComponent } from './carousel-tiny-slider/carousel-tin
     HeaderComponent,
     CarouselComponent,
     HomeComponent,
-    CarouselTinySliderComponent
+    CarouselTinySliderComponent,
+    CarouselOwlComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxGlideModule
+    NgxGlideModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
