@@ -32,13 +32,6 @@ export class CarouselOwlComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.carouselData = [
-      { label: 'Mobile internet', imgSrc: '' },
-      { label: 'Home internet', imgSrc: '' },
-      { label: 'Get a device', imgSrc: '' },
-      { label: 'Add a phone-line', imgSrc: '' },
-      { label: 'Upgrade', imgSrc: '' },
-    ]
   }
 
   ngAfterViewInit(): void {

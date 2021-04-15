@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselTinySliderComponent } from './carousel-tiny-slider/carousel-tiny-slider.component';
-import { CarouselOwlComponent } from './carousel-owl/carousel-owl.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'glidejs', component: CarouselComponent },
   { path: 'tinyslider', component: CarouselTinySliderComponent },
-  { path: 'home', component: CarouselOwlComponent },
+  { path: 'home', component: HomeComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
