@@ -8,7 +8,12 @@
 html, body { height: 100%; }
 body {
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-  background: rgba(255, 0, 0, 0.16);
+  // background: rgba(255, 0, 0, 0.16);
+  background: #f8fafb;
+}
+
+.owl-stage {
+  padding: 0 20px;
 }
 
 .owl-item {
@@ -19,7 +24,7 @@ body {
   visibility: visible;
   width: 216px !important;
   &.enlarge {
-    width: 456px !important;
+    width: 416px !important;
   }
 }
 
@@ -27,7 +32,7 @@ body {
   .owl-item.active {
     width: 200px !important;
     &.enlarge {
-      width: 424px !important;
+      width: 384px !important;
     }
   }
 
@@ -36,7 +41,7 @@ body {
   .owl-item.active {
     margin-right: 16px !important;
     &.enlarge {
-      width: 368px !important;
+      width: 328px !important;
     }
   }
 }

@@ -1,5 +1,5 @@
 .container {
-  padding-top: 214px;
+  padding-top: 80px;
   min-width: 1232px;
   margin-left: 0;
   position: relative;
@@ -15,7 +15,7 @@
 .question {
   position: absolute;
   left: 240px;
-  top: 288px;
+  top: 154px;
   width: 216px;
   height: 80px;
   font-family: 'Work Sans', sans-serif;
@@ -56,12 +56,12 @@
       color: #232323;
     }
     &.prev {
-      top: 744px;
-      left: 328px;
+      top: 614px;
+      left: 348px;
     }
     &.next {
-      top: 744px;
-      left: 1048px;
+      top: 614px;
+      left: 1042px;
     }
     span {
       vertical-align: middle;
@@ -72,30 +72,30 @@
 @media screen and (max-width: 1919px) {
   .carousel-controls-container .carousel-control {
     &.prev {
-      left: 304px;
+      left: 324px;
     }
     &.next {
-      left: 976px;
+      left: 956px;
     }
   }
 }
 @media screen and (max-width: 1365px) {
   .carousel-controls-container .carousel-control {
     &.prev {
-      left: 296px;
+      left: 316px;
     }
     &.next {
-      left: 896px;
+      left: 876px;
     }
   }
 }
 
 .carousel-item {
   margin-top: 140px;
-  background: #ebebeb;
-  border-radius: 8px;
+  background: linear-gradient(#ffffff, #ebebeb);
+  border-radius: 20px;
   border: 1px solid rgba(150,150,150,0.08);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   height: 284px;
   font-family: 'Work Sans', sans-serif;
   line-height: 24px;
@@ -132,8 +132,8 @@
   &.selected {
     margin-top:0;
      height: 556px;
-    border-radius: 16px 16px 12px 12px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.32);
+    border-radius: 40px 40px 20px 20px;
+    box-shadow:  0 8px #FFC000, 0 16px 24px rgba(0,0,0,0.70);
     color: #F5F5F5;
     background: linear-gradient(#373737, #191919);
     -webkit-transition: height 300ms;
@@ -158,17 +158,17 @@
       visibility: visible;
     }
 
-    &::after {
-      content: "";
-      width: 100%;
-      height: 50px;
-      background: #FFC000;
-      border-radius: 16px;
-      position: absolute;
-      left: 0;
-      bottom: 42px;
-      z-index: -1;
-    }
+    // &::after {
+    //   content: "";
+    //   width: 100%;
+    //   height: 50px;
+    //   background: #FFC000;
+    //   border-radius: 16px;
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 42px;
+    //   z-index: -1;
+    // }
   }
 }
 
