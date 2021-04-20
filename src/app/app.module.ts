@@ -13,6 +13,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselTinySliderComponent } from './carousel-tiny-slider/carousel-tiny-slider.component';
 
 import { CarouselOwlComponent } from './carousel-owl/carousel-owl.component';
+import { CarouselOwl2Component } from './carousel-owl2/carousel-owl2.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarouselOwlComponent } from './carousel-owl/carousel-owl.component';
     CarouselComponent,
     HomeComponent,
     CarouselTinySliderComponent,
-    CarouselOwlComponent
+    CarouselOwlComponent,
+    CarouselOwl2Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<div class="container">
+  <owl-carousel-o #owlCarousel
+    [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let item of carouselData">
+      <div class="carousel-item">
+        <div class="image"></div>
+        <div class="label">{{ item.label }}</div>
+        <div class="start-here">START HERE&nbsp;&nbsp;<span class="material-icons">chevron_right</span></div>
+      </div>
+    </ng-template>  
+  </owl-carousel-o>
+</div>
