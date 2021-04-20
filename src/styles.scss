@@ -18,30 +18,40 @@ body {
 
 .owl-item {
   padding: 50px 0;
-  visibility: hidden;
+  .carousel-item {
+    transition: transform 400ms;
+  }
 }
 .owl-item.active {
-  visibility: visible;
   width: 216px !important;
-  &.enlarge {
-    width: 416px !important;
+
+}
+.owl-item.active.center {
+  margin-right: 124px !important;
+  margin-left: 100px;
+  height: 560px;
+  z-index: 5; 
+  .carousel-item {
+    transform: scale(1.8);
   }
 }
 
 @media screen and (max-width: 1919px) {
   .owl-item.active {
     width: 200px !important;
-    &.enlarge {
-      width: 384px !important;
-    }
+  }
+  .owl-item.active.center {
+    margin-right: 114px !important;
+    margin-left: 90px;
   }
 
 }
 @media screen and (max-width: 1365px) {
   .owl-item.active {
     margin-right: 16px !important;
-    &.enlarge {
-      width: 328px !important;
-    }
+  }
+  .owl-item.active.center {
+    margin-right: 88px !important;
+    margin-left: 72px;
   }
 }
